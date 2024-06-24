@@ -1,0 +1,201 @@
+.navbar-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+.navbar-navbar-interactive {
+  width: 100%;
+  display: flex;
+  max-width: idth;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-threeunits);
+  padding-right: var(--dl-space-space-threeunits);
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: space-between;
+  background-color: #D9D9D9;
+}
+.navbar-desktop-menu {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-container1 {
+  flex: 0 0 auto;
+  width: 991px;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.navbar-links {
+  gap: var(--dl-space-space-twounits);
+  flex: 1;
+  width: 991px;
+  height: 42px;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.navbar-about {
+  text-decoration: none;
+}
+.navbar-research {
+  text-decoration: none;
+}
+.navbar-projects {
+  text-decoration: none;
+}
+.navbar-navlink {
+  text-decoration: none;
+}
+.navbar-container2 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: space-between;
+  flex-direction: column;
+}
+.navbar-container3 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 24px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.navbar-icon {
+  width: 50%;
+  height: 33px;
+}
+.navbar-icon02 {
+  width: 50px;
+  height: 33px;
+  margin-left: var(--dl-space-space-unit);
+}
+.navbar-burger-menu {
+  display: none;
+}
+.navbar-icon04 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.navbar-mobile-menu {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: var(--dl-space-space-twounits);
+  z-index: 100;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: 0.5s;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #D9D9D9;
+}
+.navbar-nav {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #D9D9D9;
+}
+.navbar-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--dl-space-space-threeunits);
+  justify-content: space-between;
+}
+.navbar-close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-icon06 {
+  width: var(--dl-size-size-xsmall);
+  height: var(--dl-size-size-xsmall);
+}
+.navbar-links1 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.navbar-icon-group {
+  gap: var(--dl-space-space-twounits);
+  width: auto;
+  display: flex;
+  align-self: flex-start;
+  margin-top: var(--dl-space-space-sixunits);
+}
+.navbar-icon08 {
+  width: 50%;
+  height: 33px;
+}
+.navbar-icon10 {
+  width: 50px;
+  height: 33px;
+  margin-left: var(--dl-space-space-unit);
+}
+.navbar-root-class-name {
+  align-self: center;
+}
+.navbar-root-class-name1 {
+  align-self: center;
+}
+.navbar-root-class-name2 {
+  align-self: center;
+}
+.navbar-root-class-name3 {
+  align-self: center;
+}
+@media(max-width: 991px) {
+  .navbar-container1 {
+    width: 693px;
+    height: 26px;
+  }
+  .navbar-links {
+    width: 777px;
+    height: 28px;
+  }
+}
+@media(max-width: 767px) {
+  .navbar-navbar-interactive {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+  .navbar-desktop-menu {
+    display: none;
+  }
+  .navbar-burger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar-link1 {
+    font-size: 24px;
+  }
+  .navbar-link2 {
+    font-size: 24px;
+  }
+  .navbar-link5 {
+    font-size: 24px;
+  }
+}
+@media(max-width: 479px) {
+  .navbar-navbar-interactive {
+    padding: var(--dl-space-space-unit);
+  }
+  .navbar-mobile-menu {
+    padding: var(--dl-space-space-unit);
+  }
+}

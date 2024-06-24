@@ -1,0 +1,32 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-color: #D9D9D9;
+}
+.home-text {
+  margin-top: var(--dl-space-space-twounits);
+}
+.home-credits {
+  gap: var(--dl-space-space-twounits);
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+.home-title {
+  font-size: 24px;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+}
+.home-title1 {
+  font-size: 24px;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+}
+.home-iframe {
+  width: 1074px;
+  height: 1129px;
+}

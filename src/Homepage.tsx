@@ -12,7 +12,7 @@ const HomePage = () => {
         </div>
         <div>
           <p id="bio">
-            I am a Senior studying Computer Science at University of Washington. I am currently
+            I am a Senior studying Computer Science (CS) at University of Washington. I am currently
             looking for opportunities to learn more about Machine Learning and Computer vision.
             I am working as an undergraduate researcher at laboratory of Dr. Elizabeth Nance
             (University of Washington) creating a new deep learning model that will predicts trajectories of 
