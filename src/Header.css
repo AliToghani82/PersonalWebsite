@@ -1,0 +1,73 @@
+/* Header Styles */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 30%; /* Adjust the width as needed */
+  }
+  
+  .titleH {
+    font-size: 24px;
+  }
+  
+  .navU {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .navU li {
+    float: left;
+  }
+  
+  .navU li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .navU li a:hover {
+    background-color: #424242;
+    border-radius: 20%;
+    color: white;
+  }
+  
+  .navU .active {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-radius: 20%;
+  }
+  
+  #img1 {
+    float: right;
+    width: 31.75px;
+    height: 27px;
+    position: relative;
+    bottom: -10px;
+    right: 10px;
+  }
+  
+  #img2 {
+    float: right;
+    width: 29px;
+    height: 29px;
+    position: relative;
+    bottom: -9px;
+    right: 20px;
+  }
+  
+  /* Dropdown styles if needed */
+  /* ... */
+@media (max-width: 500px) {
+  .titleH {
+    font-size: 2px;
+  }
+}

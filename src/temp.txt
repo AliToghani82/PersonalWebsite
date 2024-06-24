@@ -1,0 +1,39 @@
+// Header.js
+import React, { Component } from "react";
+import { Outlet, Link , NavLink } from "react-router-dom";
+import './HomePage.css'; // Import your CSS file
+import Github from "./GithubLogoDark.png";
+import linkedin from "./LI-In-Bug.png";
+import HomePage from "./Homepage";
+import Project from "./Project";
+
+const Header = () => {
+    return (
+      <>
+        <h1 id="titleH">Ali Toghani</h1>
+        <ul id="navU">
+            <a href="https://www.linkedin.com/in/alitoghani/">
+                <img id="img1" src={Github} alt="" />
+            </a>
+            <a href="https://github.com/AliToghani82">
+                <img id="img2" src={linkedin} alt="" />
+            </a>
+            <li>
+            <NavLink to="/home" style={({ isActive }) => ({ color: isActive ? 'white' : 'black' })}>Home</NavLink>
+            </li>
+            <li>
+            <NavLink to="/projects" style={({ isActive }) => ({ color: isActive ? 'white' : 'black' })}>Projects</NavLink>
+            </li>
+            <li>
+            <NavLink to="/home" style={({ isActive }) => ({ color: isActive ? 'white' : 'black' })}>Research</NavLink>
+            </li>
+            <li>
+            <NavLink to="/home" style={({ isActive }) => ({ color: isActive ? 'white' : 'black' })}>Contact Me</NavLink>
+            </li>
+        </ul>
+        <Outlet />
+      </>
+    )
+  };
+  
+export default Header;
