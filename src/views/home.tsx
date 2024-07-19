@@ -11,8 +11,8 @@ const Home = () => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Liquid Windy Gerbil</title>
-        <meta property="og:title" content="Liquid Windy Gerbil" />
+        <title>Ali Toghani</title>
+        <meta property="og:title" content="Ali Toghani" />
       </Helmet>
       <h1 className="home-text">
         <span>Ali Toghani</span>
@@ -26,15 +26,16 @@ const Home = () => {
         <span>About Me</span>
         <br></br>
       </h1>
-      <Bio></Bio>
+      {<Bio></Bio>}
       <h1 className="home-title1 thq-heading-1">
         <span>My Resume</span>
         <br></br>
         <br></br>
       </h1>
       <iframe
-        src="5f1fe218-8b9d-4edf-a3c0-e87a0437a184"
+        src={`${process.env.PUBLIC_URL}/AliToghani_Resume.pdf`}
         className="home-iframe"
+        title="Ali Toghani Resume"
       ></iframe>
       <Footer></Footer>
     </div>

@@ -1,18 +1,34 @@
 import React, { useState } from 'react'
 
 import PropTypes from 'prop-types'
+import Rok_Website_Stat from '../Images/ROK_Website_Stat.png';
+import Rok_Website_Rank from '../Images/ROK_Website_Rank.png';
+import Rok_Website from '../Images/ROK_Website.png';
 
 import './project3.css'
 
 const Project3 = (props) => {
   const [activeTab, setActiveTab] = useState(0)
+
+  const getActiveImageSrc = () => {
+    if (activeTab === 0) {
+      return props.feature1ImgSrc;
+    } else if (activeTab === 1) {
+      return props.feature2ImgSrc;
+    } else if (activeTab === 2) {
+      return props.feature3ImgSrc;
+    }
+    return props.imageSrc;
+  };
+
+
   return (
     <div className="thq-section-padding">
       <div className="project3-container1 thq-section-max-width">
         <div className="project3-image-container">
           <img
             alt={props.imageAlt}
-            src={props.imageSrc}
+            src={getActiveImageSrc()}
             className="project3-image thq-img-ratio-16-9"
           />
         </div>
@@ -29,6 +45,7 @@ const Project3 = (props) => {
               <span className="thq-body-small">
                 {props.feature1Description}
               </span>
+              {activeTab === 0 && <span className="thq-body-small">This homepage displays an overview statistics of the kingdom showing from top 300 players</span>}
             </div>
           </div>
           <div
@@ -43,6 +60,8 @@ const Project3 = (props) => {
               <span className="thq-body-small">
                 {props.feature2Description}
               </span>
+              {activeTab === 1 && <span className="thq-body-small">This homepage displays an overview statistics of each player</span>}
+
             </div>
           </div>
           <div
@@ -57,6 +76,7 @@ const Project3 = (props) => {
               <span className="thq-body-small">
                 {props.feature3Description}
               </span>
+              {activeTab === 2 && <span className="thq-body-small">This homepage displays a ranking of all players based on kills and deaths</span>}
             </div>
           </div>
         </div>
@@ -66,42 +86,38 @@ const Project3 = (props) => {
 }
 
 Project3.defaultProps = {
-  feature3ImgAlt: 'Research Project Image 3',
-  feature1Title: 'Research Overview',
-  feature2ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
-  feature2Description:
-    'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  feature1ImgAlt: 'Research Project Image 1',
-  feature2ImgAlt: 'Research Project Image 2',
-  feature1Description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  feature3ImgSrc:
-    'https://images.unsplash.com/photo-1524683745036-b46f52b8505a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcxOTE5NTAxOHw&ixlib=rb-4.0.3&q=80&w=1080',
-  feature2Title: 'Research Findings',
-  feature3Title: 'Data Analysis',
-  imageSrc:
-    'https://images.unsplash.com/photo-1718964313081-b363137c94e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8YWxsfDEzfHx8fHx8Mnx8MTcxOTE5NTAzNnw&ixlib=rb-4.0.3&q=80&w=1400',
-  feature3Description:
-    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  imageAlt: 'image',
-  feature1ImgSrc: 'https://play.teleporthq.io/static/svg/default-img.svg',
-}
+  feature1Description: 'The main website of the kingdom in which users can see their stats',
+  feature1ImgAlt: '',
+  feature1ImgSrc: Rok_Website,
+  feature1Title: 'Website Homepage',
+  feature2Description: 'The main Stat Portion of the Website',
+  feature2ImgAlt: '',
+  feature2ImgSrc: Rok_Website_Stat,
+  feature2Title: 'Website Dashboard',
+  feature3Description: 'The User Ranking Per Kingdom',
+  feature3ImgAlt: '',
+  feature3ImgSrc: Rok_Website_Rank,
+  feature3Title: 'Website Ranking',
+  imageAlt: '',
+  imageSrc: Rok_Website_Stat,
+};
 
 Project3.propTypes = {
-  feature3ImgAlt: PropTypes.string,
-  feature1Title: PropTypes.string,
-  feature2ImgSrc: PropTypes.string,
-  feature2Description: PropTypes.string,
-  feature1ImgAlt: PropTypes.string,
-  feature2ImgAlt: PropTypes.string,
   feature1Description: PropTypes.string,
-  feature3ImgSrc: PropTypes.string,
-  feature2Title: PropTypes.string,
-  feature3Title: PropTypes.string,
-  imageSrc: PropTypes.string,
-  feature3Description: PropTypes.string,
-  imageAlt: PropTypes.string,
+  feature1ImgAlt: PropTypes.string,
   feature1ImgSrc: PropTypes.string,
-}
+  feature1Title: PropTypes.string,
+  feature2Description: PropTypes.string,
+  feature2ImgAlt: PropTypes.string,
+  feature2ImgSrc: PropTypes.string,
+  feature2Title: PropTypes.string,
+  feature3Description: PropTypes.string,
+  feature3ImgAlt: PropTypes.string,
+  feature3ImgSrc: PropTypes.string,
+  feature3Title: PropTypes.string,
+  imageAlt: PropTypes.string,
+  imageSrc: PropTypes.string,
+};
+
 
 export default Project3

@@ -17,9 +17,10 @@
   align-items: center;
 }
 .bio-image {
-  width: 659px;
-  height: 642px;
+  width: 650px;
+  height: 640px;
 }
+
 .bio-content {
   gap: var(--dl-space-space-oneandhalfunits);
   flex: 1;
@@ -46,4 +47,12 @@
     gap: var(--dl-space-space-twounits);
     flex-direction: column;
   }
+  .bio-image {
+    max-width: 650px;
+    max-height: 640px;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
 }

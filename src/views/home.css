@@ -27,6 +27,8 @@
   text-align: center;
 }
 .home-iframe {
-  width: 1074px;
-  height: 1129px;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  aspect-ratio: 1100 / 1130;
 }

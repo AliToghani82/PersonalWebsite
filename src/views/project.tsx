@@ -14,8 +14,8 @@ const Project = () => {
   return (
     <div className="project-container">
       <Helmet>
-        <title>Project - Liquid Windy Gerbil</title>
-        <meta property="og:title" content="Project - Liquid Windy Gerbil" />
+        <title>Projects</title>
+        <meta property="og:title" content="Projects" />
       </Helmet>
       <h1 className="project-text">
         <span>Ali Toghani</span>
@@ -25,10 +25,9 @@ const Project = () => {
       <div className="project-credits">
         <div className="thq-divider-horizontal"></div>
       </div>
-      <ProjectGallery></ProjectGallery>
+      {//<ProjectGallery></ProjectGallery>
+      }
       <Project1></Project1>
-      <Project2></Project2>
-      <Project3></Project3>
       <Footer></Footer>
     </div>
   )
