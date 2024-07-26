@@ -23,14 +23,21 @@ const Project1 = () => {
               <h2 className="thq-heading-2">GameStat Tracker And Website</h2>
               <br></br>
               <span className="thq-body-small">
-                <p>Our gamestat tracker project harnesses Python scripts to gather data from 
-                  diverse game APIs and user interactions. We meticulously curate and store 
-                  game scores, playtime, achievements, and other metrics in a robust backend 
-                  database. Powered by frameworks like Django or Flask, our frontend interface 
-                  offers dynamic visualization through charts, graphs, and personalized dashboards. 
-                  Dive into the realm of gaming analytics with us, where our project provides a 
-                  seamless and interactive experience to track and analyze your gaming journey.</p>
+                <p>The GameStat Tracker is an innovative project designed to revolutionize 
+                  the way gamers and developers monitor and analyze in-game statistics. 
+                  This comprehensive tracking tool leverages advanced algorithms to collect, 
+                  process, and display real-time data on player performance, game mechanics, 
+                  and overall gameplay trends. Whether you're a casual gamer seeking to 
+                  improve your skills or a developer aiming to understand player behavior, 
+                  GameStat Tracker provides insightful analytics that can enhance the gaming 
+                  experience. The platform features customizable dashboards, detailed performance 
+                  reports, and intuitive visualizations, all accessible through a user-friendly 
+                  interface. By offering deep insights into gaming data, GameStat Tracker empowers 
+                  users to make informed decisions, refine strategies, and ultimately, elevate 
+                  their gaming experience to new heights.</p>
               </span>
+              <p>Skills: Python, AWS, OpenAi API</p>
+              <p>Github Link: <a href="https://github.com/AliToghani82/JARVIS">https://github.com/AliToghani82/JARVIS</a></p>
             </div>
           </div>
         </div>

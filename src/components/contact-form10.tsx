@@ -9,10 +9,10 @@ const ContactForm10 = () => {
     <div className="contact-form10-contact11 thq-section-padding">
       <div className="contact-form10-max-width thq-section-max-width">
         <div className="contact-form10-section-title thq-card">
-          <span className="thq-body-small">I will get back to you as soon as possible</span>
           <div className="contact-form10-content">
             <h2 className="thq-heading-2">Contact Me</h2>
           </div>
+          <span className="thq-body-small">I will get back to you as soon as possible</span>
         </div>
         <div className="contact-form10-content1">
           <form className="contact-form10-form thq-card">
