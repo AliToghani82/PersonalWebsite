@@ -56,3 +56,40 @@
   }
   
 }
+
+@media (max-width: 991px) {
+  .bio-layout349 {
+    padding: 20px; /* Adds padding around the entire bio section */
+  }
+
+  .bio-max-width {
+    flex-direction: column; /* Stacks the image and content vertically */
+    width: 100%; /* Uses the full width */
+  }
+
+  .bio-image-container {
+    width: 100%; /* Container takes full width */
+    justify-content: center; /* Centers the image horizontally */
+  }
+
+  .bio-image {
+    width: 100%; /* Image takes full width of its container */
+    height: auto; /* Keeps the aspect ratio of the image */
+    max-width: 650px; /* Limits the size on larger mobile devices */
+    max-height: none; /* Removes max-height restriction */
+  }
+
+  .bio-content {
+    width: 100%; /* Content takes full width */
+  }
+
+  .bio-section-title,
+  .bio-content1 {
+    width: 100%; /* Ensures that content sections use full width */
+  }
+}
+
+* {
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+  max-width: 100%; /* Prevents any element from exceeding the body width */
+}

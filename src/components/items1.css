@@ -1,4 +1,4 @@
-.project2-container1 {
+.project1-container1 {
   width: 100%;
   display: grid;
   grid-gap: var(--dl-space-space-fiveunits);
@@ -6,7 +6,21 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.project2-tabs-menu {
+.project1-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project1-image {
+  max-width: 100%;
+  max-height: 500px; /* Increased the fixed height for the image container */
+  object-fit: contain; /* Keeps the image's aspect ratio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  border-radius: 8px; /* Adds rounded edges */
+}
+
+.project1-tabs-menu {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
@@ -15,24 +29,28 @@
   justify-content: center;
 }
 
-.project2-tab-horizontal {
+.project1-tab-horizontal {
   flex-wrap: wrap; /* Allows items to wrap to the next line */
   align-items: center; /* Better alignment */
 }
 
-.project2-divider-container {
+p, .thq-body-small, a {
+  font-size: 1rem; /* Adjusted font size for larger screens */
+}
+
+.project1-divider-container {
   display: flex;
   align-self: stretch;
   align-items: flex-start;
 }
 
-.project2-container2 {
+.project1-container2 {
   width: 2px;
   align-self: stretch;
   background-color: var(--dl-color-theme-neutral-dark);
 }
 
-.project2-content {
+.project1-content {
   padding: 16px;  /* Adjust padding */
   gap: 16px;
   display: flex;
@@ -42,36 +60,18 @@
   justify-content: flex-start;
 }
 
-.project2-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project2-image {
-  max-width: 100%;
-  max-height: 400px; /* Adjust this value to make the image larger or smaller */
-  object-fit: contain; /* Keeps the image's aspect ratio */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  border-radius: 8px; /* Adds rounded edges */
+* {
+  box-sizing: border-box; /* Makes sure padding and borders are included in the total width/height */
+  max-width: 100%; /* Prevents any element from exceeding the body width */
 }
 
 @media (max-width: 991px) {
-  .project2-container1 {
+  .project1-container1 {
     grid-template-columns: 1fr;
   }
 
   p, .thq-body-small, a {
     font-size: 1.2rem; /* Adjusted font size for medium screens */
-  }
-
-  .project2-image-container {
-    order: 1; /* Ensures image is displayed above the content on mobile */
-    margin-bottom: 20px; /* Adds some space between the image and the text content */
-  }
-
-  .project2-tabs-menu {
-    order: 2;
   }
 }
 
@@ -81,15 +81,26 @@
   }
 }
 
+.gallery-image {
+  width: 100%;
+  height: 0;
+  padding-top: 75%; /* 4:3 aspect ratio */
+  object-fit: cover;
+}
+
 @media (max-width: 991px) {
-  .project2-tab-horizontal h2 {
-    text-align: center;
-    width: 100%; /* Ensure the title spans the full width */
+  .project1-tab-horizontal h2 {
+      text-align: center;
+      width: 100%; /* Ensure the title spans the full width */
   }
 
-  .project2-content p, .project2-content span, .project2-content a {
+  .project1-content p, .project1-content span, .project1-content a {
     text-align: left; /* Consistent text alignment */
     word-break: break-word; /* Prevents text from overflowing */
+  }
+
+  .project1-tab-horizontal h2 {
+    text-align: center; /* Center the heading on mobile */
   }
 }
 

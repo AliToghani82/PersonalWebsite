@@ -3,7 +3,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
-import ProjectGallery from '../components/project-gallery'
 import Project1 from '../components/project1'
 import Project2 from '../components/project2'
 import Project3 from '../components/project3'

@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet'
 import Navbar from '../components/navbar'
 import Research1 from '../components/research1'
 import Research2 from '../components/research2'
+import Footer from '../components/footer'
 import './research.css'
 
 const Research = () => {
@@ -24,6 +25,7 @@ const Research = () => {
       </div>
       <Research1></Research1>
       <Research2></Research2>
+      <Footer></Footer>
     </div>
   )
 }

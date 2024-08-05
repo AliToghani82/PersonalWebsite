@@ -3,7 +3,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import Navbar from '../components/navbar'
-import ContactForm10 from '../components/contact-form10'
+import ContactForm from '../components/contact-form10'
+import Footer from '../components/footer'
 import './contact.css'
 import { title } from 'process'
 
@@ -22,7 +23,8 @@ const Contact = () => {
       <div className="contact-credits">
         <div className="thq-divider-horizontal"></div>
       </div>
-      <ContactForm10></ContactForm10>
+      <ContactForm></ContactForm>
+      <Footer></Footer>
     </div>
   )
 }

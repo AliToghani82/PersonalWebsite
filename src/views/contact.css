@@ -16,3 +16,7 @@
   align-items: center;
   flex-direction: column;
 }
+
+html {
+  overflow-x: initial !important;
+}
