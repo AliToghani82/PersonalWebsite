@@ -16,18 +16,24 @@ const Project1 = () => {
         </div>
         <div className="project1-tabs-menu">
           <div className="project1-tab-horizontal">
-            <div className="project1-divider-container"></div>
             <div className="project1-content">
               <h2 className="thq-heading-2">GameStat Tracker And Website</h2>
-              <br />
               <span className="thq-body-small">
                 <p>
-                  The GameStat Tracker is a project designed to revolutionize the way statistics can be collected and monitored for analysis in-game statistics. 
-                  This tracking tool leverages a script written to collect, process, and display real-time data on player performance and game mechanics. 
-                  Whether you're a casual gamer seeking to understand your skills or a leader aiming to understand players statistics, GameStat Tracker provides analytics that can 
-                  enhance the gaming experience. The platform features customizable dashboards, detailed performance reports, and intuitive visualizations, all accessible through a user-friendly 
-                  interface. By offering deep insights into gaming data, GameStat Tracker empowers users to make informed decisions, refine strategies, and ultimately, elevate 
-                  their gaming experience to new heights.
+                GameStat Tracker is a personal project I built to collect and display seasonal KvK (Kingdom vs. Kingdom) 
+                stats from a mobile game. The data is gathered using a Python script that leverages pytesseract for OCR 
+                and pyautogui for screen automation to read player IDs, names, and other relevant info directly from the 
+                game interface.
+
+                The collected data is then uploaded to a Firebase Cloud Firestore database. On the frontend, 
+                I use a React app built with TypeScript to fetch and display the data in a clean, user-friendly way. 
+                The site is still a work in progress and I continue to maintain and improve it as I go.
+                </p> <b>Future Improvements:</b>
+                <p> I'm working on moving the entire data collection process to the cloud. 
+                The plan is to host the script on an AWS EC2 instance and use AWS Lambda to 
+                trigger the scan remotely. This will allow server leaders to initiate scans on-demand, 
+                eliminating the need for manual runs on my end. The goal is to make the system fully automated, 
+                scalable, and easier for others to interact with.
                 </p>
               </span>
               <p><b>Skills:</b> Python (pyautogui, pytesseract), Typescript, Javascript, React, HTML/CSS</p>

@@ -12,7 +12,6 @@ const Research1 = () => {
             <div className="project2-divider-container"></div>
             <div className="project2-content">
               <h2 className="thq-heading-2">Data Visualization Notebook</h2>
-              <br />
               <span className="thq-body-small">
                 <p>
                   This Visualization Notebook was developed to enhance the efficiency of creating 

@@ -18,8 +18,7 @@ const Research1 = () => {
           <div className="project1-tab-horizontal">
             <div className="project1-divider-container"></div>
             <div className="project1-content">
-              <h2 className="thq-heading-2">Deep Learning with MPT</h2>
-              <br />
+              <h2 className="thq-heading-2">Deep Learning with Multiple Particle Tracking (MPT)</h2>
               <span className="thq-body-small">
                 <p>
                   Our research project in Dr. Nance's Lab at the University of Washington focuses on

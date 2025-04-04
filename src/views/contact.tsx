@@ -12,8 +12,8 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <Helmet>
-        <title>Contact - Liquid Windy Gerbil</title>
-        <meta property="og:title" content="Contact - Liquid Windy Gerbil" />
+        <title>Contact</title>
+        <meta property="og:title" content="Contact" />
       </Helmet>
       <h1 className="contact-text">
         <span>Ali Toghani</span>
